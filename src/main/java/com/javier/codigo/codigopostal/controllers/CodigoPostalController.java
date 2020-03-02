@@ -22,6 +22,11 @@ public class CodigoPostalController {
 	@Autowired
 	ICodigoPostalServce codigoPostalService;
 
+	@GetMapping("/")
+	public String codigoPostal() {
+		return "hola";
+	}
+
 //	@GetMapping("/zip-codes/{codigoPostal}")
 //	public ResponseEntity<?> codigoPostal(@PathVariable String codigoPostal) {
 //
